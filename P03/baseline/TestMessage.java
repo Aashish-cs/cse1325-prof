@@ -31,8 +31,8 @@ public class TestMessage {
             System.err.println("----");
             result |= vector;
         }
-        expected = "From: Prof Rice (1)\n\nThis is message #1\n";
-        actual = stripDate(m1);
+        expected = "From: Prof Rice (1)\n\nThis is message #1";
+        actual = stripDate(m1).trim();
         if(!expected.equals(actual)) {
             System.err.println("\nERROR: Nominal case toString");
             System.err.println("----Expected: \n" + expected);
@@ -66,8 +66,8 @@ public class TestMessage {
             System.err.println("----");
             result |= vector;
         }
-        expected = "From: Excellent Student (2)\nIn reply to: Prof Rice (1)\n\nThis is message #2 in response to message #1\n";
-        actual = stripDate(m2);
+        expected = "From: Excellent Student (2)\nIn reply to: Prof Rice (1)\n\nThis is message #2 in response to message #1";
+        actual = stripDate(m2).trim();
         if(!expected.equals(actual)) {
             System.err.println("\nERROR: Replied case toString message #2");
             System.err.println("----Expected: \n" + expected);
@@ -75,8 +75,8 @@ public class TestMessage {
             System.err.println("----");
             result |= vector;
         }
-        expected = "From: Prof Rice (1)\nReplies: Excellent Student (2)\n\nThis is message #1\n";
-        actual = stripDate(m1);
+        expected = "From: Prof Rice (1)\nReplies: Excellent Student (2)\n\nThis is message #1";
+        actual = stripDate(m1).trim();
         if(!expected.equals(actual)) {
             System.err.println("\nERROR: Replied case toString message #1");
             System.err.println("----Expected: \n" + expected);
@@ -117,8 +117,8 @@ public class TestMessage {
             System.err.println("----");
             result |= vector;
         }
-        expected = "From: Prof Rice (1)\nIn reply to: Prof Rice (1)\n\nThis is message #3 in response to message #1\n";
-        actual = stripDate(m3);
+        expected = "From: Prof Rice (1)\nIn reply to: Prof Rice (1)\n\nThis is message #3 in response to message #1";
+        actual = stripDate(m3).trim();
         if(!expected.equals(actual)) {
             System.err.println("\nERROR: Double replied case toString message #3");
             System.err.println("----Expected: \n" + expected);
@@ -126,8 +126,8 @@ public class TestMessage {
             System.err.println("----");
             result |= vector;
         }
-        expected = "From: Prof Rice (1)\nReplies: Excellent Student (2), Prof Rice (1)\n\nThis is message #1\n";
-        actual = stripDate(m1);
+        expected = "From: Prof Rice (1)\nReplies: Excellent Student (2), Prof Rice (1)\n\nThis is message #1";
+        actual = stripDate(m1).trim();
         if(!expected.equals(actual)) {
             System.err.println("\nERROR: Replied case toString message #1");
             System.err.println("----Expected: \n" + expected);

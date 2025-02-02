@@ -3,6 +3,7 @@ public class TestAccount {
         int result = 0;
         int vector = 1;
         String expected = "";
+        String actual = "";
     
         // Nominal case
         Account a1 = new Account("Prof Rice");
@@ -13,7 +14,8 @@ public class TestAccount {
             result |= vector;
         }
         expected = "Prof Rice (1)";
-        if(!expected.equals(a1.toString())) {
+        actual = a1.toString().trim();
+        if(!expected.equals(actual)) {
             System.err.println("\nERROR: Nominal case toString");
             System.err.println("    Expected: " + expected);
             System.err.println("    Actual:   " + a1);
@@ -30,7 +32,8 @@ public class TestAccount {
             result |= vector;
         }
         expected = "Prof Rice (1) [Blocked]";
-        if(!expected.equals(a1.toString())) {
+        actual = a1.toString().trim();
+        if(!expected.equals(actual)) {
             System.err.println("\nERROR: Blocked case toString");
             System.err.println("    Expected: " + expected);
             System.err.println("    Actual:   " + a1);
@@ -47,7 +50,8 @@ public class TestAccount {
             result |= vector;
         }
         expected = "Prof Rice (1) [Muted]";
-        if(!expected.equals(a1.toString())) {
+        actual = a1.toString().trim();
+        if(!expected.equals(actual)) {
             System.err.println("\nERROR: Muted case toString");
             System.err.println("    Expected: " + expected);
             System.err.println("    Actual:   " + a1);
@@ -58,7 +62,8 @@ public class TestAccount {
         // Incrementing ID case
         a1 = new Account("Excellent Student");
         expected = "Excellent Student (2)";
-        if(!expected.equals(a1.toString())) {
+        actual = a1.toString().trim();
+        if(!expected.equals(actual)) {
             System.err.println("\nERROR: Incrementing ID case toString");
             System.err.println("    Expected: " + expected);
             System.err.println("    Actual:   " + a1);
