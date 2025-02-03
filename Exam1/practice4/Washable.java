@@ -1,0 +1,4 @@
+interface Washable {
+    void wash();
+}
+
