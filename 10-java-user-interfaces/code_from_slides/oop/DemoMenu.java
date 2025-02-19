@@ -1,6 +1,7 @@
-package menu;
-
 import java.util.ArrayList;
+
+import menu.Menu;
+import menu.MenuItem;
 
 public class DemoMenu {
     public static void main(String[] args) {
