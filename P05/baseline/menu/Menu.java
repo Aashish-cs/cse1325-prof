@@ -125,7 +125,7 @@ public class Menu {
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
      * @param defaultInput The String that is returned if the user just presses Enter.
-     * @returns null if the input matches cancelInput or the input String otherwise.
+     * @return null if the input matches cancelInput or the input String otherwise.
      * @since               1.0
      */
     public static String getString(String prompt, String cancelInput, String defaultInput) {
@@ -156,7 +156,7 @@ public class Menu {
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
-     * @returns null if the input matches cancelInput or the input String otherwise.
+     * @return null if the input matches cancelInput or the input String otherwise.
      * @since               1.0
      */
     public static String getString(String prompt, String cancelInput) {
@@ -174,7 +174,7 @@ public class Menu {
      *
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
-     * @returns null if the input matches cancelInput or the input String otherwise.
+     * @return null if the input matches cancelInput or the input String otherwise.
      * @since               1.0
      */
     public static String getString(String prompt) {
@@ -198,7 +198,7 @@ public class Menu {
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
      * @param defaultInput The String that is converted to an Integer if the user just presses Enter.
-     * @returns null if the input matches cancelInput or the input Integer otherwise.
+     * @return null if the input matches cancelInput or the input Integer otherwise.
      * @since               1.0
      */
     public static Integer getInt(String prompt, String cancelInput, String defaultInput) {
@@ -229,7 +229,7 @@ public class Menu {
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
-     * @returns null if the input matches cancelInput or the input Integer otherwise.
+     * @return null if the input matches cancelInput or the input Integer otherwise.
      * @since               1.0
      */
     public static Integer getInt(String prompt, String cancelInput) {
@@ -247,7 +247,7 @@ public class Menu {
      *
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
-     * @returns null if the input matches cancelInput or the input Integer otherwise.
+     * @return null if the input matches cancelInput or the input Integer otherwise.
      * @since               1.0
      */
     public static Integer getInt(String prompt) {
@@ -271,7 +271,7 @@ public class Menu {
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
      * @param defaultInput The String that is converted to an Double if the user just presses Enter.
-     * @returns null if the input matches cancelInput or the input Double otherwise.
+     * @return null if the input matches cancelInput or the input Double otherwise.
      * @since               1.0
      */
     public static Double getDouble(String prompt, String cancelInput, String defaultInput) {
@@ -302,7 +302,7 @@ public class Menu {
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
-     * @returns null if the input matches cancelInput or the input Double otherwise.
+     * @return null if the input matches cancelInput or the input Double otherwise.
      * @since               1.0
      */
     public static Double getDouble(String prompt, String cancelInput) {
@@ -320,7 +320,7 @@ public class Menu {
      *
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
-     * @returns null if the input matches cancelInput or the input Double otherwise.
+     * @return null if the input matches cancelInput or the input Double otherwise.
      * @since               1.0
      */
     public static Double getDouble(String prompt) {
@@ -344,7 +344,7 @@ public class Menu {
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
      * @param defaultInput The String that is converted to an Boolean if the user just presses Enter.
-     * @returns null if the input matches cancelInput or the input Boolean otherwise.
+     * @return null if the input matches cancelInput or the input Boolean otherwise.
      * @since               1.0
      */
     public static Boolean getBoolean(String prompt, String cancelInput, String defaultInput) {
@@ -375,7 +375,7 @@ public class Menu {
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
-     * @returns null if the input matches cancelInput or the input Boolean otherwise.
+     * @return null if the input matches cancelInput or the input Boolean otherwise.
      * @since               1.0
      */
      public static Boolean getBoolean(String prompt, String cancelInput) {
@@ -393,7 +393,7 @@ public class Menu {
      *
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
-     * @returns null if the input matches cancelInput or the input Boolean otherwise.
+     * @return null if the input matches cancelInput or the input Boolean otherwise.
      * @since               1.0
      */
     public static Boolean getBoolean(String prompt) {
@@ -417,7 +417,7 @@ public class Menu {
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
      * @param defaultInput The String that is converted to an Character if the user just presses Enter.
-     * @returns null if the input matches cancelInput or the input Character otherwise.
+     * @return null if the input matches cancelInput or the input Character otherwise.
      * @since               1.0
      */
     public static Character getChar(String prompt, String cancelInput, String defaultInput) {
@@ -448,7 +448,7 @@ public class Menu {
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
-     * @returns null if the input matches cancelInput or the input Character otherwise.
+     * @return null if the input matches cancelInput or the input Character otherwise.
      * @since               1.0
      */
     public static Character getChar(String prompt, String cancelInput) {
@@ -466,7 +466,7 @@ public class Menu {
      *
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
-     * @returns null if the input matches cancelInput or the input Character otherwise.
+     * @return null if the input matches cancelInput or the input Character otherwise.
      * @since               1.0
      */
     public static Character getChar(String prompt) {
@@ -494,7 +494,7 @@ public class Menu {
      * @param array     The array of objects from which the user will select.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
      * @param defaultInput The String that is converted to an Integer if the user just presses Enter.
-     * @returns null if the input matches cancelInput or the input Integer otherwise.
+     * @return null if the input matches cancelInput or the input Integer otherwise.
      * @since               1.1
      */
     public static Integer selectItemFromArray(String prompt, Object[] array, String cancelInput, String defaultInput) {
@@ -528,7 +528,7 @@ public class Menu {
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param array     The array of objects from which the user will select.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
-     * @returns null if the input matches cancelInput or the input Integer otherwise.
+     * @return null if the input matches cancelInput or the input Integer otherwise.
      * @since               1.1
      */
     public static Integer selectItemFromArray(String prompt, Object[] array, String cancelInput) {
@@ -550,7 +550,7 @@ public class Menu {
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param array     The array of objects from which the user will select.
-     * @returns the input Integer.
+     * @return the input Integer.
      * @since               1.1
      */
     public static Integer selectItemFromArray(String prompt, Object[] array) {
@@ -578,7 +578,7 @@ public class Menu {
      * @param list      The list of objects from which the user will select.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
      * @param defaultInput The String that is converted to an Integer if the user just presses Enter.
-     * @returns null if the input matches cancelInput or the input Integer otherwise.
+     * @return null if the input matches cancelInput or the input Integer otherwise.
      * @since               1.1
      */
     public static Integer selectItemFromList(String prompt, List list, String cancelInput, String defaultInput) {
@@ -604,7 +604,7 @@ public class Menu {
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param list      The list of objects from which the user will select.
      * @param cancelInput  The String that, if entered  by the user, returns a null.
-     * @returns null if the input matches cancelInput or the input Integer otherwise.
+     * @return null if the input matches cancelInput or the input Integer otherwise.
      * @since               1.1
      */
     public static Integer selectItemFromList(String prompt, List list, String cancelInput) {
@@ -626,7 +626,7 @@ public class Menu {
      * 
      * @param prompt    The String to be printed (if not null) to prompt input from the user.
      * @param list      The list of objects from which the user will select.
-     * @returns null if the input matches cancelInput or the input Integer otherwise.
+     * @return null if the input matches cancelInput or the input Integer otherwise.
      * @since               1.1
      */
     public static Integer selectItemFromList(String prompt, List list) {

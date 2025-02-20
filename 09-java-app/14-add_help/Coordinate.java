@@ -43,7 +43,7 @@ public class Coordinate {
         return "(" + x + "," + y + ")";
     }
     
-    public void add(Coordinate rhs) {
+fffrvvvvvvvvvvvfrrrrrrrrrrrrrrrrrrrrrvvffrvvvvvvvvvvvfrrr    public void add(Coordinate rhs) {
         x = Math.min(Math.max(x+rhs.x,0),maxX-1);
         y = Math.min(Math.max(y+rhs.y,0),maxY-1);
         validate();

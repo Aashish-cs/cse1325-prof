@@ -54,7 +54,7 @@ public class Coordinate {
         if(this == o) return true;
         if(o == null || getClass() != o.getClass()) return false;
         final Coordinate that = (Coordinate) o;
-        return (x == that.x) && (y == that.y);
+        return (this.x == that.x) && (this.y == that.y);
     }
     
     protected void validate() {
