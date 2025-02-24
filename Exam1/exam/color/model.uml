@@ -1,0 +1,56 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+class Color <<abstract>> {
+ #{static} rgbBrightness(r : double, g : double, b : double) : double
+ +{abstract} brightness() : double <<abstract>>
+}
+'' RGB (0.2126*R + 0.7152*G + 0.0722*B)
+
+class RGB extends Color {
+ - r : double
+ - g : double
+ - b : double
+ + RGB(r : double, g : double, b : double)
+ + brightness() : double
+}
+'' RGB (0.2126*R + 0.7152*G + 0.0722*B)
+
+class HSV extends Color {
+ - h : double
+ - s : double
+ - v : double
+ + HSV(h : double, s : double, v : double)
+ + brightness() : double
+}
+'' HSV V
+
+class HSL extends Color {
+ - h : double
+ - s : double
+ - l : double
+ + HSL(h : double, s : double, l : double)
+ + brightness() : double
+}
+'' HSL L
+
+class CMY extends Color {
+ - c : double
+ - m : double
+ - y : double
+ + CMY(c : double, m : double, y : double)
+ + brightness() : double
+}
+'' CMY (0.2126*(1-C) + 0.7152*(1-M) + 0.0722*(1-Y))
+
+class CMYK extends Color {
+ - c : double
+ - m : double
+ - y : double
+ - k : double
+ + CMYK(c : double, m : double, y : double, k : double)
+ + brightness() : double
+}
+'' CMYK (0.2126*(1-C)*(1-K) + 0.7152*(1-M)*(1-K) + 0.0722*(1-Y)*(1-K))
+@enduml
