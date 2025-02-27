@@ -1,8 +1,7 @@
-// These two classes manage object-oriented menus 
+import java.util.ArrayList;
+
 import menu.Menu;
 import menu.MenuItem;
-
-import java.util.ArrayList;
 
 public class DemoMenu {
     public static void main(String[] args) {

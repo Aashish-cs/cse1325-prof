@@ -16,12 +16,12 @@
            version="true"
            use="true"
            windowtitle="abUTA API">
-           <doctitle><![CDATA[<h1>menu Package</h1>]]></doctitle>
-          <bottom><![CDATA[<i>Copyright &#169; 2025 Professor George F. Rice. Dual licensed as CC BY International 4.0 and the MIT License</i>]]></bottom>
+           <doctitle><![CDATA[<h1>Mavs abUTA Social Network</h1>]]></doctitle>
+          <bottom><![CDATA[<i>Copyright &#169; 2025 Professor George F. Rice. Licensed as CC BY-SA International 4.0</i>]]></bottom>
           <tag name="license.agreement" scope="all" description="Licensed under:"/>
       </javadoc>
   </target>
-
+  
   <target name="clean" description="Clean output files">
     <delete dir="docs/api"/>
     <delete dir="docs"/>
