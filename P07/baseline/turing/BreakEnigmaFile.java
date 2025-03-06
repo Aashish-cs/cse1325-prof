@@ -13,8 +13,13 @@ import java.util.ArrayList;
 // This class reads encrypted text from filename
 
 public class BreakEnigmaFile {
+    // ==================================================================
     // You may need to add one or more private fields here to enable threading.
     // That is fine and expected!
+    
+    
+    // End section to be added (but see the two sections below!)
+    // ==================================================================
     
     // This is the filename with the encrypted string / decrypted hashcode / settings
     //   triples, which are sorted from fastest to slowest to break.
@@ -103,7 +108,7 @@ public class BreakEnigmaFile {
         pair = encrypteds.get(index); // NOT thread-safe!
         breakIt(pair.encrypted, pair.decryptedHashcode);
     }
-    // End section to be rewritten (but see another small section below!)
+    // End section to be rewritten (but see the small sections above & below!)
     // ==================================================================
 
     
