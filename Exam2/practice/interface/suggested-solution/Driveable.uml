@@ -1,0 +1,9 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+interface Driveable <<interface>> {
+  {abstract} drive()
+}
+
+@enduml
