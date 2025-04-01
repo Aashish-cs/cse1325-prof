@@ -18,19 +18,19 @@ int main(int argc, char* argv[]) {
         return -2;
     }
 
-    double discriminant = b*b - 4*a*c;
+    double determinant = b*b - 4*a*c;
 
-    if (discriminant > 0) {
-        double x1 = (-b + sqrt(discriminant)) / (2*a);
-        double x2 = (-b - sqrt(discriminant)) / (2*a);
+    if (determinant > 0) {
+        double x1 = (-b + sqrt(determinant)) / (2*a);
+        double x2 = (-b - sqrt(determinant)) / (2*a);
         std::cout << "Roots are " << x1 << " and " << x2 << std::endl;
 
-    } else if (discriminant == 0) {
+    } else if (determinant == 0) {
         double x = -b/(2*a);
         std::cout << "Roots are both " << x << std::endl;
     } else {
         double real = -b/(2*a);
-        double imag = sqrt(-discriminant)/(2*a);
+        double imag = sqrt(-determinant)/(2*a);
         std::cout << std::showpos 
                   << "Roots are " << real <<  imag << "i and "
                                   << real << -imag << "i" << std::endl;
