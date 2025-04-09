@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
     std::string expected[] = {
         "\033[0m",                 // Color color;
         "\033[38;2;13;17;29m",     // Color color{13, 17, 29};
-        "\033[48;2;0;43;97m",      // Color color{0, 43, 97, ColorMode::BACKGROUND};
+        "\033[48;2;0;43;97m",      // Color color{0, 43, 97, Color_mode::BACKGROUND};
         "\033[38;2;46;85;113m",    // Color c1{16, 24, 36} + Color c2{31, 67, 89};
     };
     
@@ -42,7 +42,7 @@ int main(int argc, char* argv[]) {
     }
 
     {
-        Color color{0, 43, 97, ColorMode::BACKGROUND};
+        Color color{0, 43, 97, Color_mode::BACKGROUND};
         oss.str("");
         oss << color;
         if(oss.str() != expected[2]) {
@@ -76,9 +76,9 @@ int main(int argc, char* argv[]) {
         Color c1{16, 24, 36};  //          c5 == c6
         Color c2{16, 67, 36};
         Color c3{31, 67, 36};
-        Color c4{31, 67, 36, ColorMode::BACKGROUND};
-        Color c5{31, 67, 36, ColorMode::RESET};
-        Color c6{ 0,  0,  0, ColorMode::RESET};
+        Color c4{31, 67, 36, Color_mode::BACKGROUND};
+        Color c5{31, 67, 36, Color_mode::RESET};
+        Color c6{ 0,  0,  0, Color_mode::RESET};
         // equal variations
         if(!(c00 == c01)) {
             result |= vector;
@@ -129,20 +129,20 @@ int main(int argc, char* argv[]) {
         // background variations
         if(c3 == c4) {
             result |= vector;
-            std::cerr << "FAIL: {31, 67, 36} == {31, 67, 36, ColorMode::BACKGROUND}\n";
+            std::cerr << "FAIL: {31, 67, 36} == {31, 67, 36, Color_mode::BACKGROUND}\n";
         }
         if(c3 >= c4) {
             result |= vector;
-            std::cerr << "FAIL: {31, 67, 36} >= {31, 67, 36, ColorMode::BACKGROUND}\n";
+            std::cerr << "FAIL: {31, 67, 36} >= {31, 67, 36, Color_mode::BACKGROUND}\n";
         }
         // reset variations
         if(c4 >= c5) {
             result |= vector;
-            std::cerr << "FAIL: {31, 67, 36, ColorMode::BACKGROUND} >= {31, 67, 36, ColorMode::RESET}\n";
+            std::cerr << "FAIL: {31, 67, 36, Color_mode::BACKGROUND} >= {31, 67, 36, Color_mode::RESET}\n";
         }
         if(c5 != c6) {
             result |= vector;
-            std::cerr << "FAIL: {31, 67, 36, ColorMode::RESET} != { 0, 0, 0, ColorMode::RESET}\n";
+            std::cerr << "FAIL: {31, 67, 36, Color_mode::RESET} != { 0, 0, 0, Color_mode::RESET}\n";
         }
     }
     
