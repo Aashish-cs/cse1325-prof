@@ -109,8 +109,8 @@ int main() {
     for(int r=0; r<255; r+=128) {
         for(int g=0; g<255; g+=128) {
             for(int b=0; b<255; b+=128) {
-                ansi.push_back(new Color{r, g, b, ColorMode::FOREGROUND});
-                ansi.push_back(new Color{r, g, b, ColorMode::BACKGROUND});
+                ansi.push_back(new Color{r, g, b, Color_mode::FOREGROUND});
+                ansi.push_back(new Color{r, g, b, Color_mode::BACKGROUND});
             }
         }
     }

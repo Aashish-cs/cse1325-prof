@@ -11,8 +11,8 @@ default:
 	@printf "  (At the bonus level, test with './test_color bonus'.)\n\n"
 	@printf "Finally, you can 'make demo ; ./demo' to see how things work.\n"
 
-demo: demo.o ansi.o color.o colormode.o font.o *.h
-	$(CXX) $(CXXFLAGS) demo.o ansi.o color.o colormode.o font.o -o demo
+demo: demo.o ansi.o color.o color_mode.o font.o *.h
+	$(CXX) $(CXXFLAGS) demo.o ansi.o color.o color_mode.o font.o -o demo
 	@printf "Now type ./demo to execute the result\n\n"
 
 demo.o: demo.cpp *.h
@@ -27,8 +27,8 @@ font.o: font.cpp *.h
 color: color.cpp *.h
 	$(CXX) $(CXXFLAGS) -c color.cpp -o color.o
 
-colormode.o: colormode.cpp *.h
-	$(CXX) $(CXXFLAGS) -c colormode.cpp -o colormode.o
+color_mode.o: color_mode.cpp *.h
+	$(CXX) $(CXXFLAGS) -c color_mode.cpp -o color_mode.o
 
 # Test code
 test_terminal: test_terminal.cpp
